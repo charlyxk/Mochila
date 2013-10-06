@@ -14,7 +14,11 @@ public class MainMochila {
      */
     public static void main(String[] args) {
         
-        Mochila mochila = new MochilaVoraz(cargarElementos(), 50);
+       /* Mochila mochila = new MochilaVoraz(cargarElementos(), 50);
+        mochila.resolverProblema();
+        mostrarMochila(mochila);*/
+        
+        Mochila mochila = new MochilaVegas(cargarElementos(), 50);
         mochila.resolverProblema();
         mostrarMochila(mochila);
                 
@@ -23,7 +27,11 @@ public class MainMochila {
     public static List <Item> cargarElementos() {
 
         List<Item> elementos = new ArrayList();
-        elementos.add(new Item("TV", 300, 15));
+        /*elementos.add(new Item("e1", 3, 1));
+        elementos.add(new Item("e2", 100, 50));
+        elementos.add(new Item("e3", 4, 12));
+        elementos.add(new Item("e4", 5, 40));*/
+        /*elementos.add(new Item("TV", 300, 15));
         elementos.add(new Item("PS3", 100, 3));
         elementos.add(new Item("Libro Java", 10, 1));
         elementos.add(new Item("DVD Player", 5, 2));
@@ -32,6 +40,19 @@ public class MainMochila {
         elementos.add(new Item("iPod", 150, 1));
         elementos.add(new Item("Printer", 20, 4));
         elementos.add(new Item("VideoBeam", 200, 4));
+        elementos.add(new Item("LapTop", 20, 3));
+        elementos.add(new Item("iPad", 150, 2));
+        elementos.add(new Item("PC", 100, 5));
+        elementos.add(new Item("BlackBerry", 150, 2));*/
+        elementos.add(new Item("TV", 300, 15));
+        elementos.add(new Item("PS3", 100, 70));
+        elementos.add(new Item("Libro Java", 10, 18));
+        elementos.add(new Item("DVD Player", 5, 2));
+        elementos.add(new Item("Blu-Ray", 50, 1));
+        elementos.add(new Item("Balon", 30, 45));
+        elementos.add(new Item("iPod", 150, 1));
+        elementos.add(new Item("Printer", 20, 50));
+        elementos.add(new Item("VideoBeam", 200, 50));
         elementos.add(new Item("LapTop", 20, 3));
         elementos.add(new Item("iPad", 150, 2));
         elementos.add(new Item("PC", 100, 5));
